@@ -1,0 +1,21 @@
+body {
+    background-color: #222;
+}
+h1, h2, p, label {
+    color: #efefef;
+}
+#infected-count {
+    color: darkorange;
+}
+#healthy-count {
+    color: darkseagreen;
+}
+#controls {
+    text-align: center;
+}
+.control {
+    margin: 20px 10px 10px 10px;
+}
+svg {
+    background-color: #fff;
+}

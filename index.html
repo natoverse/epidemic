@@ -1,0 +1,42 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.6.0/d3.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <?xml-stylesheet type="text/css" href="nodes.css"?>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div id="controls" class="col-lg-2 col-md-3">
+            <h1>EPIDEMIC</h1>
+            <p>
+                This is a basic simulation of disease transfer.
+            </p>
+            <div class="control">
+                <button id="toggle">Start/stop</button>
+            </div>
+            <div class="control">
+                <label for="vector">Transmission:</label>
+                <select id="vector"></select>
+            </div>
+            <div class="control">
+                <h2>Infected: <span id="infected-count"></span></h2>
+                <h2>Healthy: <span id="healthy-count"></span></h2>
+            </div>
+        </div>
+        <div class="col-lg-10 col-md-9 canvas">
+            <svg id="svg" width="100%" height="100%"></svg>
+        </div>
+    </div>
+</div>
+<script src="Agent.js"></script>
+<script src="Agents.js"></script>
+<script src="vectors.js"></script>
+<script src="controls.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
